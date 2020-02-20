@@ -202,7 +202,7 @@ void setup() {
 
 void loop(){
     uint32_t now = micros();
-    if(now - prev >= 10000){    //it takes 5ms to complete on a 72MHz processor
+    if(now - prev >= 10000){
         prev = micros();
 
         readAccel();
