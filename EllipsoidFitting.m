@@ -1,10 +1,12 @@
 function EllipsoidFitting(raw)
 %   only selet the x,y,z values for acceleration or magnet
+    format long
     raw = table2array(raw);
     tmp = size(raw);
     psi = [raw(:,2).^2 raw(:,3).^2 raw(:,1) raw(:,2) raw(:,3) ones(tmp(1,1),1)];
     Y = -(raw(:,1).^2);
-    theta = inv(transpose(psi)*psi)*transpose(psi)*Y;
+    P = inv(transpose(psi)*psi)
+    theta = P*transpose(psi)*Y
     x_c = theta(3,1)/-2;
     y_c = theta(4,1)/(-2*theta(1,1));
     z_c = theta(5,1)/(-2*theta(2,1));
