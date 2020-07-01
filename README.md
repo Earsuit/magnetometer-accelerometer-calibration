@@ -9,3 +9,4 @@ The EllipsoidFitting.m is a Matlab code for ellipsoid fitting.
 
 If you have any questions, please contact me :)
 
+For more info, please check my blog: https://xianyu.world/?p=99&lang=en
