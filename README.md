@@ -9,4 +9,4 @@ The EllipsoidFitting.m is a Matlab code for ellipsoid fitting.
 
 If you have any questions, please contact me :)
 
-For more info, please check my blog: https://xianyu.world/?p=99&lang=en
+For more info, please check my [blog](https://earsuit.github.io/blog/how_to_calibriate_a_magnetometer_and_accelerometer.html).
